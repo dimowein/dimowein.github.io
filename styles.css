@@ -34,3 +34,39 @@ section {
 h1, h2 {
   margin-bottom: 20px;
 }
+
+#home {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#product-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#product-list li {
+  margin: 10px;
+  max-width: 200px;
+}
+
+#product-list img {
+  width: 100%;
+  height: auto;
+}
+
+#product-list span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#product-list button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}

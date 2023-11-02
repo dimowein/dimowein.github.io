@@ -344,6 +344,33 @@ body.nav-active { overflow: hidden; }
     margin-top: -50px; 
     font-weight: bold; 
 }
+@media screen and (max-width: 820px) {
+    .section-intro {
+        height: auto; /* Remove the fixed height */
+        padding: 20px; /* Add some padding for better spacing */
+        text-align: left; /* Adjust text alignment as needed */
+        font-size: 16px; /* Adjust the font size as needed */
+        background-size: contain; /* Or other appropriate size */
+    }
+}
+@media screen and (max-width: 600px) {
+    .section-introv {
+        height: auto; /* Remove the fixed height */
+        padding: 20px; /* Add some padding for better spacing */
+        text-align: left; /* Adjust text alignment as needed */
+        font-size: 16px; /* Adjust the font size as needed */
+        background-size: contain; /* Or other appropriate size */
+    }
+}
+@media screen and (max-width: 600px) {
+    .section-introw {
+        height: auto; /* Remove the fixed height */
+        padding: 20px; /* Add some padding for better spacing */
+        text-align: left; /* Adjust text alignment as needed */
+        font-size: 16px; /* Adjust the font size as needed */
+        background-size: contain; /* Or other appropriate size */
+    }
+}
 .large-text {
   font-size: 45px;
 }

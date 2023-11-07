@@ -405,7 +405,15 @@ body.nav-active { overflow: hidden; }
   overflow: hidden;
   z-index: 1;
 }
-
+.section-intro {
+    height: 820px;
+    background-image: url(img/petr-sevcovic-qE1jxYXiwOA-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .bg-black-10 { background-color: var(--smoky-black-2); }
 
 .grid-list {

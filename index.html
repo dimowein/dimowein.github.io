@@ -9,14 +9,14 @@
   <!-- 
     - primary meta tags
   -->
-  <title>Grilli - Amazing & Delicious Food</title>
-  <meta name="title" content="Grilli - Amazing & Delicious Food">
-  <meta name="description" content="This is a Restaurant html template made by codewithsadee">
+  <title>Das kleine Steakhouse - zu den zwei goldenen Hirschen</title>
+  <meta name="title" content="Das kleine Steakhouse - zu den zwei goldenen Hirschen">
 
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="./assets/images/mlogo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
   <!-- 
     - google font link
@@ -29,78 +29,39 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
-
+  
   <!-- 
     - preload images
   -->
-  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
-  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
-  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
-
+  <link rel="preload" as="image" href="./display/2.png">
+  <link rel="preload" as="image" href="./display/1.webp">
+  <link rel="preload" as="image" href="./display/3.jpg">
+  <link rel="preload" as="image" href="./display/4.jpg">
+  <link rel="preload" as="image" href="./display/5.jpg">
+  <link rel="preload" as="image" href="./display/6.jpg">
+  <link rel="preload" as="image" href="./display/7.jpg">
+  <link rel="preload" as="image" href="./display/8.jpg">
+  <link rel="preload" as="image" href="./display/9.jpg">
+  <link rel="preload" as="image" href="./display/10.jpg">
+  <link rel="preload" as="image" href="./display/11.jpg">
+  <link rel="preload" as="image" href="./display/12.jpg">
+  <link rel="preload" as="image" href="./display/13.jpg">
+  <link rel="preload" as="image" href="./display/14.jpg">
+  
 </head>
 
 <body id="top">
 
-  <!-- 
+ <!-- 
     - #PRELOADER
   -->
 
   <div class="preload" data-preaload>
-    <div class="circle"></div>
-    <p class="text">Grilli</p>
   </div>
 
 
+  
 
-
-
-  <!-- 
-    - #TOP BAR
-  -->
-
-  <div class="topbar">
-    <div class="container">
-
-      <address class="topbar-item">
-        <div class="icon">
-          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
-        </div>
-
-        <span class="span">
-          Restaurant St, Delicious City, London 9578, UK
-        </span>
-      </address>
-
-      <div class="separator"></div>
-
-      <div class="topbar-item item-2">
-        <div class="icon">
-          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-        </div>
-
-        <span class="span">Daily : 8.00 am to 10.00 pm</span>
-      </div>
-
-      <a href="tel:+11234567890" class="topbar-item link">
-        <div class="icon">
-          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-        </div>
-
-        <span class="span">+1 123 456 7890</span>
-      </a>
-
-      <div class="separator"></div>
-
-      <a href="mailto:booking@restaurant.com" class="topbar-item link">
-        <div class="icon">
-          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-        </div>
-
-        <span class="span">booking@restaurant.com</span>
-      </a>
-
-    </div>
-  </div>
 
 
 
@@ -113,9 +74,7 @@
   <header class="header" data-header>
     <div class="container">
 
-      <a href="#" class="logo">
-        <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home">
-      </a>
+      
 
       <nav class="navbar" data-navbar>
 
@@ -123,89 +82,72 @@
           <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
         </button>
 
-        <a href="#" class="logo">
-          <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home">
-        </a>
 
         <ul class="navbar-list">
-
+		
+		  <li class="navbar-item">
+			<a href="./suche.html" class="navbar-link hover-underline">
+			  <div class="separator"></div>
+			  <span class="span" style="font-weight: bold; font-size: 24px; color: var(--gold-crayola);">Jobs</span>
+			 </a>
+		  </li>
+		
+		  <li class="navbar-item">
+			<a href="./xoroi/xr.html" class="navbar-link hover-underline">
+			  <div class="separator"></div>
+			  <span class="span" style="font-weight: bold; font-size: 24px; color: var(--gold-crayola);">Unsere Räume</span>
+			 </a>
+		  </li>
+		
+		
           <li class="navbar-item">
-            <a href="#home" class="navbar-link hover-underline active">
+			<a href="./oefn.html" class="navbar-link hover-underline">
+			  <div class="separator"></div>
+			  <span class="span" style="font-weight: bold; font-size: 24px; color: var(--gold-crayola);">Öffnungszeiten</span>
+			 </a>
+		  </li>
+		  
+		  <li class="navbar-item">
+            <a href="./gallerie/gl.html" class="navbar-link hover-underline">
               <div class="separator"></div>
 
-              <span class="span">Home</span>
+              <span class="span" style="font-weight: bold; font-size: 24px; color: var(--gold-crayola);">Galerie</span>
             </a>
           </li>
-
+		  
           <li class="navbar-item">
-            <a href="#menu" class="navbar-link hover-underline">
+            <a href="./menu/mn.html" class="navbar-link hover-underline">
               <div class="separator"></div>
 
-              <span class="span">Menus</span>
+              <span class="span" style="font-weight: bold; font-size: 24px; color: var(--gold-crayola);">Menu</span>
             </a>
           </li>
-
+		  
+        
           <li class="navbar-item">
-            <a href="#about" class="navbar-link hover-underline">
+			<a href="./imprint/imprint.html" class="navbar-link hover-underline">
               <div class="separator"></div>
-
-              <span class="span">About Us</span>
-            </a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link hover-underline">
-              <div class="separator"></div>
-
-              <span class="span">Our Chefs</span>
-            </a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link hover-underline">
-              <div class="separator"></div>
-
-              <span class="span">Contact</span>
-            </a>
-          </li>
+			  
+              <span class="span" style="font-weight: bold; font-size: 24px; color: var(--gold-crayola);">Impressum</span>
+			</a>
+		  </li>
+         
 
         </ul>
 
-        <div class="text-center">
-          <p class="headline-1 navbar-title">Visit Us</p>
-
-          <address class="body-4">
-            Restaurant St, Delicious City, <br>
-            London 9578, UK
-          </address>
-
-          <p class="body-4 navbar-text">Open: 9.30 am - 2.30pm</p>
-
-          <a href="mailto:booking@grilli.com" class="body-4 sidebar-link">booking@grilli.com</a>
-
-          <div class="separator"></div>
-
-          <p class="contact-label">Booking Request</p>
-
-          <a href="tel:+88123123456" class="body-1 contact-number hover-underline">
-            +88-123-123456
-          </a>
-        </div>
-
+       
       </nav>
-
-      <a href="#" class="btn btn-secondary">
-        <span class="text text-1">Find A Table</span>
-
-        <span class="text text-2" aria-hidden="true">Find A Table</span>
-      </a>
-
+      
+	
+        
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
         <span class="line line-1"></span>
         <span class="line line-2"></span>
         <span class="line line-3"></span>
       </button>
+      
 
+	    
       <div class="overlay" data-nav-toggler data-overlay></div>
 
     </div>
@@ -229,79 +171,111 @@
           <li class="slider-item active" data-hero-slider-item>
 
             <div class="slider-bg">
-              <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+              <img src="./assets/images/logo.png" width="480" height="480" alt="" class="img-cover">
             </div>
 
-            <p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
-
-            <h1 class="display-1 hero-title slider-reveal">
-              For the love of <br>
-              delicious food
-            </h1>
-
-            <p class="body-2 hero-text slider-reveal">
-              Come with family & feel the joy of mouthwatering food
-            </p>
-
-            <a href="#" class="btn btn-primary slider-reveal">
-              <span class="text text-1">View Our Menu</span>
-
-              <span class="text text-2" aria-hidden="true">View Our Menu</span>
-            </a>
+            
 
           </li>
 
           <li class="slider-item" data-hero-slider-item>
 
             <div class="slider-bg">
-              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+              <img src="./display/1.webp" width="1880" height="950" alt="" class="img-cover">
             </div>
 
-            <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
 
-            <h1 class="display-1 hero-title slider-reveal">
-              Flavors Inspired by <br>
-              the Seasons
-            </h1>
-
-            <p class="body-2 hero-text slider-reveal">
-              Come with family & feel the joy of mouthwatering food
-            </p>
-
-            <a href="#" class="btn btn-primary slider-reveal">
-              <span class="text text-1">View Our Menu</span>
-
-              <span class="text text-2" aria-hidden="true">View Our Menu</span>
-            </a>
-
+           
           </li>
 
+     
+		  <li class="slider-item" data-hero-slider-item>
+
+			<div class="slider-bg">
+			  <img src="./display/3.jpg" width="100" height="100" alt="" class="img-cover">
+			</div>
+				   
+
+				  
+
+		  </li>
+		   <li class="slider-item" data-hero-slider-item>
+
+			<div class="slider-bg">
+			  <img src="./display/4.jpg" width="100" height="100" alt="" class="img-cover">
+			</div>
+				   
+
+				  
+
+		  </li>
           <li class="slider-item" data-hero-slider-item>
 
-            <div class="slider-bg">
-              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
-            </div>
+			<div class="slider-bg">
+			  <img src="./display/5.jpg" width="1880" height="950" alt="" class="img-cover">
+			</div>
+				   
 
-            <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
+				  
 
-            <h1 class="display-1 hero-title slider-reveal">
-              Where every flavor <br>
-              tells a story
-            </h1>
+		  </li>
+		  
+		  <li class="slider-item" data-hero-slider-item>
 
-            <p class="body-2 hero-text slider-reveal">
-              Come with family & feel the joy of mouthwatering food
-            </p>
+			<div class="slider-bg">
+			  <img src="./display/6.jpg" width="1880" height="950" alt="" class="img-cover">
+			</div>
+				   
 
-            <a href="#" class="btn btn-primary slider-reveal">
-              <span class="text text-1">View Our Menu</span>
+				  
 
-              <span class="text text-2" aria-hidden="true">View Our Menu</span>
-            </a>
+		  </li>
+		  <li class="slider-item" data-hero-slider-item>
 
-          </li>
+			<div class="slider-bg">
+			  <img src="./display/7.jpg" width="1880" height="950" alt="" class="img-cover">
+			</div>
+				   
 
-        </ul>
+				  
+
+		  </li>
+		  
+		  <li class="slider-item" data-hero-slider-item>
+
+			<div class="slider-bg">
+			  <img src="./display/8.jpg" width="1880" height="950" alt="" class="img-cover">
+			</div>
+				   
+
+				  
+
+		  </li>
+		  <li class="slider-item" data-hero-slider-item>
+
+			<div class="slider-bg">
+			  <img src="./display/9.jpg" width="1880" height="950" alt="" class="img-cover">
+			</div>
+				   
+
+				  
+
+		  </li>
+		  <li class="slider-item" data-hero-slider-item>
+
+			<div class="slider-bg">
+			  <img src="./display/11.jpg" width="1880" height="950" alt="" class="img-cover">
+			</div>
+				   
+
+				  
+
+		  </li>
+		 
+		 
+
+		
+		</ul>
 
         <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
           <ion-icon name="chevron-back"></ion-icon>
@@ -311,16 +285,13 @@
           <ion-icon name="chevron-forward"></ion-icon>
         </button>
 
-        <a href="#" class="hero-btn has-after">
-          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
-
-          <span class="label-2 text-center span">Book A Table</span>
-        </a>
-
+        <a href="./paypal.html">
+    		  <div class="hero-btn has-after" style="position: relative; top: -20px; left: 20px;">
+    			<img src="./assets/images/gu.png" width="48" height="48" alt="booking icon">
+    			<span class="label-2 text-center span" style="color: var(--gold-crayola);font-size:0.62em;">Zum<br>Gutschein<br></span>
+    		  </div>
+		    </a>
       </section>
-
-
-
 
 
       <!-- 

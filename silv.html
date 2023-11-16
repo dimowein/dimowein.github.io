@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullscreen GIF</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #fullscreen-gif {
+            position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			transform: scale(1.0);
+			pointer-events: none;
+			user-select: none;
+			z-index: -1;
+            background-color: black;
+            
+        }
+
+        #fullscreen-gif img {
+           position: absolute;
+		   top: 0;
+		   left: 0;
+		   width: 100%;
+		   height: 100%;
+		   transform: scale(1.0);
+		   pointer-events: none;
+		   user-select: none;
+		   z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    // Create the fullscreen element
+    var fullscreenElement = document.createElement('div');
+    fullscreenElement.id = 'fullscreen-gif';
+
+    // Create the image element
+    var imgElement = document.createElement('img');
+    imgElement.src = './assets/images/fullscreen.gif'; // Replace with the path to your GIF
+    fullscreenElement.appendChild(imgElement);
+
+    // Append the fullscreen element to the body
+    document.body.appendChild(fullscreenElement);
+
+    // Show the fullscreen element
+    fullscreenElement.style.display = 'block';
+
+    // Close the fullscreen on click
+    fullscreenElement.addEventListener('click', function () {
+        document.body.removeChild(fullscreenElement);
+    });
+</script>
+
+</body>
+</html>

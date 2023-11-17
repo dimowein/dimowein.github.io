@@ -306,7 +306,7 @@ body.nav-active { overflow: hidden; }
   object-fit: cover;
 }
 .section-intro {
-    
+    height: 820px;
     background-image: url('../images/IMG_0915.jpg');
     background-size: cover;
     display: flex;
@@ -315,8 +315,8 @@ body.nav-active { overflow: hidden; }
     align-items: center;
     color: var(--gold-crayola);
     text-align: center; 
-    font-size: 50vw; 
-    margin-top: -50vw; 
+    font-size: 50px; 
+    margin-top: -50px; 
     font-weight: bold; 
 }
 .section-introv {

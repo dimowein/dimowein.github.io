@@ -546,6 +546,12 @@ body.nav-active { overflow: hidden; }
   background-size: cover;
   background-position: center;
 }
+.has-bg-image1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: scale(0.5);
+}
 
 .input-field {
   background-color: var(--eerie-black-2);

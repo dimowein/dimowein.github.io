@@ -60,7 +60,7 @@
     - #HEADER
   -->
 
-  <header class="header" data-header>
+  <header class="header" data-header  style="background-color: black;">
     <div class="container">
 
       
@@ -201,7 +201,7 @@
            
            <p class="section-text" style="color: var(--gold-crayola);">
                 <span class="marker"></span>__________________________________<br>
-		<span class="marker"></span><br>
+		<span class="marker"></span><span style="font-size: 2.2em;">Öffnungszeiten</span><br>
 		<span class="marker"></span>__________________________________<br>
                 <span class="marker"></span><span style="font-size: 1.2em;">            Dienstag  - Sonntag</span><br>
 		<span class="marker"></span><span style="font-size: 1.2em;">                 17:00 - 22:30</span><br> 
@@ -213,9 +213,6 @@
 		<span class="marker"></span><span style="font-size: 1.2em;">					reservieren.</span><br>
 		<span class="marker"></span>														<br>
 		<span class="marker"></span>														<br>
-                <span class="marker"></span><span style="font-size: 1.2em;">Für die Reservierungen rufen Sie bitte</span><br>
-		<span class="marker"></span><span style="font-size: 1.2em;">mindenstens einen Tag vorher an.</span><br>
-                <span class="marker"></span><span style="font-size: 1.2em;">											</span><br>
 		<span class="marker"></span><span style="font-size: 1.2em;">In unsere Räume können bis </span><br>
 	        <span class="marker"></span><span style="font-size: 1.2em;">70 Personen Platz finden.</span><br>
 		
@@ -228,7 +225,57 @@
         </div>
 	       
       </section>
-	  
+      <section class="section about text-center" aria-labelledby="about-label" id="about" style="background-color: black;">
+        <div class="container">
+
+         <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label"></p>
+
+            <p class="section-subtitle label-2">Unsere Räume</p>
+
+            
+            <p class="section-text">
+				<span class="marker"></span><span style="font-size: 1.2em;">Ob Sharing Dinner,Geschäftsessen ,Taufe ,Kommunion ,Konfirmation - </span><br> 
+		                <span class="marker"></span><span style="font-size: 1.2em;">unsere Räume sind so vielseitig wie Sie. Empfangen Sie Ihre Kollegen oder Ihre Familie & Freunde zu einem gemütlichen Degustations-Abend. Und während Sie genießen, kümmert sich unser Team um Sie und Ihre Gäste.</span><br> 
+				<span class="marker"></span><span style="font-size: 1.2em;">In unsere Räume können bis 70 Personen Platz finden.</span><br> 
+				
+			</p>
+
+
+          </div>
+
+          <figure class="about-banner">
+
+          
+			<video controls autoplay muted id="myVideo" style="max-width: 100%; height: auto; width: 100%;">
+			    <source src="./assets/images/pan.mp4" type="video/mp4">
+			</video>
+			<script>
+			  
+			  const video = document.getElementById('myVideo');
+
+			  
+			  video.addEventListener('ended', function() {
+				
+				video.currentTime = 0;
+				video.play();
+			  });
+			</script>
+			
+			
+
+            <div class="abs-img abs-img-2 has-before">
+              <img src="./assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="">
+            </div>
+
+          </figure>
+
+          
+
+        </div>
+    </section>
+
 	   
      
     <section class="section about text-center" aria-labelledby="about-label" id="about" style="background-color: black;">
@@ -273,7 +320,7 @@
 		<div class="section-introv" style="max-width: 100%; height: auto; width: 100%; display: block; margin: auto;">
 		
 			<p>
-			  <span class="large-text">AUF DEM TELLER UND IM GLAS</span><br>
+			  <span class="marker"></span><span style="font-size: 3.2em;">AUF DEM TELLER UND IM GLAS</span><br>
 			  
 			  <span class="small-text">STÖBERT DURCH UNSERE SPEISE - UND GETRÄNKEKARTEN</span><br>
 			  
@@ -298,37 +345,30 @@
 
             <li>
               <div class="service-card">
-
-                <a href="./assets/images/steak.pdf" class="has-before hover:shine">
-                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="./assets/images/service-1.png" width="100" height="100" loading="lazy" alt="STEAKS"
-                      class="img-cover">
-                  </figure>
-                </a>
-
-                <div class="card-content">
+		 <div class="card-content">
 
                   <h3 class="title-4 card-title">
-                    <a href="./assets/images/steak.pdf" style="color: var(--gold-crayola);">STEAKS</a>
+                    <a href="./assets/images/aperitif.pdf" style="color: var(--gold-crayola);">APERITIF</a>
                   </h3>
 
 
                 </div>
+
+                <a href="./assets/images/aperitif.pdf" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-3.png" width="100" height="100" loading="lazy"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+               
 
               </div>
             </li>
 
             <li>
               <div class="service-card">
-
-                <a href="./assets/images/Champagner.pdf" class="has-before hover:shine">
-                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="./assets/images/service-2.jpg" width="285" height="336" loading="lazy" alt="WEIN"
-                      class="img-cover">
-                  </figure>
-                </a>
-
-                <div class="card-content">
+		 <div class="card-content">
 
                   <h3 class="title-4 card-title">
                     <a href="./assets/images/Champagner.pdf" style="color: var(--gold-crayola);">WEIN</a>
@@ -338,96 +378,109 @@
 
                 </div>
 
+                <a href="./assets/images/Champagner.pdf" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-2.jpg" width="285" height="336" loading="lazy" 
+                      class="img-cover">
+                  </figure>
+                </a>
+
+               
+
               </div>
             </li>
 
             <li>
               <div class="service-card">
-
-                <a href="./assets/images/aperitif.pdf" class="has-before hover:shine">
-                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="./assets/images/service-3.jpg" width="285" height="336" loading="lazy" alt="APERITIF"
-                      class="img-cover">
-                  </figure>
-                </a>
-
-                <div class="card-content">
+		  <div class="card-content">
 
                   <h3 class="title-4 card-title">
-                    <a href="./assets/images/aperitif.pdf" style="color: var(--gold-crayola);">APERITIF</a>
+                    <a href="./assets/images/soups.pdf" style="color: var(--gold-crayola);">STARTERS</a>
                   </h3>
 
                   
 
                 </div>
+
+                <a href="./assets/images/soups.pdf" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-5.jpg" width="285" height="336" loading="lazy" 
+                      class="img-cover">
+                  </figure>
+                </a>
+
+              
 
               </div>
             </li>
 			
 			 <li>
               <div class="service-card">
-
-                <a href="./assets/images/dessert.pdf" class="has-before hover:shine">
-                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="./assets/images/service-4.jpeg" width="285" height="336" loading="lazy" alt="DESSERT UND DIGESTIF"
-                      class="img-cover">
-                  </figure>
-                </a>
-
-                <div class="card-content">
+		       <div class="card-content">
 
                   <h3 class="title-4 card-title">
-                    <a href=""./assets/images/dessert.pdf"" style="color: var(--gold-crayola);">DESSERT + DIGESTIF</a>
+                    <a href="./assets/images/steak.pdf" style="color: var(--gold-crayola);">STEAKS</a>
                   </h3>
 
                   
 
                 </div>
+
+
+                <a href="./assets/images/steak.pdf" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-1.jpeg" width="285" height="336" loading="lazy" 
+                      class="img-cover">
+                  </figure>
+                </a>
+
+              
 
               </div>
             </li>
 			
 	   <li>
               <div class="service-card">
-
-                <a href="./assets/images/steak.pdf" class="has-before hover:shine">
-                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="./assets/images/service-1.png" width="100" height="100" loading="lazy" alt="SEAFOOD"
-                      class="img-cover">
-                  </figure>
-                </a>
-
-                <div class="card-content">
+                  <div class="card-content">
 
                   <h3 class="title-4 card-title">
-                    <a href="./assets/images/steak.pdf" style="color: var(--gold-crayola);">SEAFOOD</a>
+                    <a href="./assets/images/service-6.pdf" style="color: var(--gold-crayola);">SEAFOOD</a>
                   </h3>
 
 
                 </div>
+                <a href="./assets/images/seafood.pdf" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-6.png" width="100" height="100" loading="lazy" 
+                      class="img-cover">
+                  </figure>
+                </a>
+
+              
 
               </div>
             </li>
 		  
 	             <li>
               <div class="service-card">
-
-                <a href="./assets/images/soups.pdf" class="has-before hover:shine">
-                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="./assets/images/service-5.jpg" width="285" height="336" loading="lazy" alt="STARTERS"
-                      class="img-cover">
-                  </figure>
-                </a>
-
-                <div class="card-content">
+		      
+                  <div class="card-content">
 
                   <h3 class="title-4 card-title">
-                    <a href="./assets/images/soups.pdf" style="color: var(--gold-crayola);" style="color: var(--gold-crayola);">STARTERS</a>
+                    <a href="./assets/images/soups.pdf" style="color: var(--gold-crayola);" style="color: var(--gold-crayola);">DESSERT & DIGESTIF</a>
                   </h3>
 
                   
 
                 </div>
+                <a href="./assets/images/dessert.pdf" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-4.jpg" width="285" height="336" loading="lazy" 
+                      class="img-cover">
+                  </figure>
+                </a>
+
+               
 
               </div>
             </li>
@@ -445,56 +498,7 @@
         - #ABOUT
       -->
 
-      <section class="section about text-center" aria-labelledby="about-label" id="about" style="background-color: black;">
-        <div class="container">
-
-         <div class="about-content">
-
-            <p class="label-2 section-subtitle" id="about-label"></p>
-
-            <p class="section-subtitle label-2">Unsere Räume</p>
-
-            
-            <p class="section-text">
-				<span class="marker"></span><span style="font-size: 1.2em;">Ob Sharing Dinner,Geschäftsessen ,Taufe ,Kommunion ,Konfirmation – unsere Räume sind so vielseitig wie Sie. Empfangen Sie Ihre Kollegen oder Ihre Familie & Freunde zu einem gemütlichen Degustations-Abend. Und während Sie genießen, kümmert sich unser Team um Sie und Ihre Gäste.</span><br> 
-				<span class="marker"></span><span style="font-size: 1.2em;">In unsere Räume können bis 70 Personen Platz finden.</span><br> 
-				
-			</p>
-
-
-          </div>
-
-          <figure class="about-banner">
-
-          
-			<video controls autoplay muted id="myVideo" style="max-width: 100%; height: auto; width: 100%;">
-			    <source src="./assets/images/pan.mp4" type="video/mp4">
-			</video>
-			<script>
-			  
-			  const video = document.getElementById('myVideo');
-
-			  
-			  video.addEventListener('ended', function() {
-				
-				video.currentTime = 0;
-				video.play();
-			  });
-			</script>
-			
-			
-
-            <div class="abs-img abs-img-2 has-before">
-              <img src="./assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="">
-            </div>
-
-          </figure>
-
-          
-
-        </div>
-      </section>
-
+    
       
 
     </article>

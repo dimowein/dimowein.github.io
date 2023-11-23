@@ -50,20 +50,29 @@
 
     // Create the image element
     var imgElement = document.createElement('img');
-    imgElement.src = './assets/images/fullscreen.gif'; // Replace with the path to your GIF
+    imgElement.src = './assets/images/fullscreen.jpg'; // Replace with the path to your PNG
     imgElement.style = 'max-width: 100%; height: auto; width: 100%; display: block; margin: auto;'; // Add the inline style
+
+    // Append the image element to the fullscreen element
     fullscreenElement.appendChild(imgElement);
 
     // Append the fullscreen element to the body
     document.body.appendChild(fullscreenElement);
 
+    // Play the GIF once
+    var gifElement = document.createElement('img');
+    gifElement.src = './assets/images/fullscreen.gif'; // Replace with the path to your GIF
+    gifElement.style = 'max-width: 100%; height: auto; width: 100%; display: block; margin: auto;'; // Add the inline style
+    fullscreenElement.appendChild(gifElement);
+
     // Show the fullscreen element
     fullscreenElement.style.display = 'block';
 
-    // Close the fullscreen on click
-    fullscreenElement.addEventListener('click', function () {
-        document.body.removeChild(fullscreenElement);
+    // Remove the GIF element after it has played
+    gifElement.addEventListener('animationend', function () {
+        fullscreenElement.removeChild(gifElement);
     });
+
 </script>
 
 </body>
